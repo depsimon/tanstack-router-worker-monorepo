@@ -1,0 +1,190 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-10-29 10:11+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/sidebar.tsx:32
+msgid "Account"
+msgstr "Account"
+
+#: src/routes/_app/settings/route.tsx:44
+msgid "Advanced"
+msgstr "Advanced"
+
+#: src/routes/_app/settings/advanced.tsx:68
+msgid "Are you sure you want to delete your account? This action cannot be undone."
+msgstr "Are you sure you want to delete your account? This action cannot be undone."
+
+#: src/routes/_app/settings/security.tsx:99
+msgid "Change Password"
+msgstr "Change Password"
+
+#: src/routes/_app/settings/security.tsx:76
+msgid "Current password"
+msgstr "Current password"
+
+#: src/routes/_app/settings/advanced.tsx:47
+msgid "Danger Zone"
+msgstr "Danger Zone"
+
+#: src/routes/_app/settings/advanced.tsx:56
+#: src/routes/_app/settings/advanced.tsx:65
+msgid "Delete Account"
+msgstr "Delete Account"
+
+#: src/routes/_app/settings/advanced.tsx:50
+msgid "Deleting your account is irreversible and will remove all your data."
+msgstr "Deleting your account is irreversible and will remove all your data."
+
+#: src/routes/_app/settings/index.tsx:100
+msgid "Drop an image or <0>click to browse</0>"
+msgstr "Drop an image or <0>click to browse</0>"
+
+#: src/forms/sign-in.tsx:74
+#: src/forms/sign-up.tsx:108
+msgid "Email address"
+msgstr "Email address"
+
+#: src/forms/sign-in.tsx:65
+msgid "Enter your credentials to access your account"
+msgstr "Enter your credentials to access your account"
+
+#: src/routes/_app/settings/security.tsx:74
+msgid "Enter your current password"
+msgstr "Enter your current password"
+
+#: src/forms/sign-up.tsx:87
+msgid "Enter your details to create a new account"
+msgstr "Enter your details to create a new account"
+
+#: src/forms/sign-in.tsx:72
+#: src/forms/sign-up.tsx:106
+msgid "Enter your email address"
+msgstr "Enter your email address"
+
+#: src/forms/sign-up.tsx:94
+#: src/routes/_app/settings/index.tsx:79
+#: src/routes/_app/settings/index.tsx:141
+msgid "Enter your name"
+msgstr "Enter your name"
+
+#: src/routes/_app/settings/security.tsx:86
+msgid "Enter your new password"
+msgstr "Enter your new password"
+
+#: src/forms/sign-in.tsx:84
+#: src/forms/sign-up.tsx:118
+msgid "Enter your password"
+msgstr "Enter your password"
+
+#: src/components/error-page.tsx:47
+msgid "Go back"
+msgstr "Go back"
+
+#: src/components/error-page.tsx:51
+#: src/components/sidebar.tsx:28
+msgid "Home"
+msgstr "Home"
+
+#: src/components/sidebar.tsx:48
+msgid "Logout"
+msgstr "Logout"
+
+#: src/routes/_app/settings/route.tsx:23
+msgid "Manage your account information & security settings."
+msgstr "Manage your account information & security settings."
+
+#: src/forms/sign-up.tsx:96
+msgid "Name"
+msgstr "Name"
+
+#: src/routes/_app/settings/security.tsx:88
+msgid "New password"
+msgstr "New password"
+
+#: src/forms/sign-in.tsx:86
+#: src/forms/sign-up.tsx:120
+msgid "Password"
+msgstr "Password"
+
+#: src/forms/sign-in.tsx:31
+#: src/forms/sign-up.tsx:36
+msgid "Password must be at least 8 characters long"
+msgstr "Password must be at least 8 characters long"
+
+#: src/forms/sign-in.tsx:28
+#: src/forms/sign-up.tsx:33
+msgid "Please enter a valid email address"
+msgstr "Please enter a valid email address"
+
+#: src/routes/_app/settings/index.tsx:106
+msgid "PNG, JPG, GIF up to 2MB"
+msgstr "PNG, JPG, GIF up to 2MB"
+
+#: src/routes/_app/settings/index.tsx:111
+msgid "Preview of profile picture"
+msgstr "Preview of profile picture"
+
+#: src/routes/_app/settings/route.tsx:32
+msgid "Profile"
+msgstr "Profile"
+
+#: src/routes/_app/settings/index.tsx:81
+msgid "Profile picture"
+msgstr "Profile picture"
+
+#: src/routes/_app/settings/index.tsx:151
+msgid "Save"
+msgstr "Save"
+
+#: src/routes/_app/settings/route.tsx:38
+msgid "Security"
+msgstr "Security"
+
+#: src/components/sidebar.tsx:37
+#: src/routes/_app/settings/route.tsx:20
+msgid "Settings"
+msgstr "Settings"
+
+#: src/forms/sign-in.tsx:97
+#: src/forms/sign-up.tsx:131
+msgid "Sign in"
+msgstr "Sign in"
+
+#: src/routes/auth/login.tsx:11
+msgid "Sign In | ACME"
+msgstr "Sign In | ACME"
+
+#: src/forms/sign-in.tsx:62
+msgid "Sign in to your account"
+msgstr "Sign in to your account"
+
+#: src/routes/auth/register.tsx:11
+msgid "Sign Up | ACME"
+msgstr "Sign Up | ACME"
+
+#: src/forms/sign-up.tsx:84
+msgid "Sign up for an account"
+msgstr "Sign up for an account"
+
+#: src/routes/_app/settings/security.tsx:96
+msgid "This will log you out of all devices."
+msgstr "This will log you out of all devices."
+
+#: src/routes/_app/settings/advanced.tsx:76
+msgid "This will permanently delete your account and all associated data. If you are sure, please contact support to proceed with the deletion (support@acme.co)."
+msgstr "This will permanently delete your account and all associated data. If you are sure, please contact support to proceed with the deletion (support@acme.co)."
+
+#: src/routes/_app/settings/index.tsx:143
+msgid "Your name"
+msgstr "Your name"

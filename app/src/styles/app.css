@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+@import "tailwindcss";
+
+@import "./base.css" layer(base);
+@import "./tokens.css" layer(theme);
+@import "./theme.css" layer(theme);
+@import "./utilities.css";
+
+@plugin "tailwindcss-animate";
+
+@source ".";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+	--font-display: "Domine", serif;
+}

@@ -1,0 +1,47 @@
+{
+	"name": "@acme/data",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"auth:generate": "bunx @better-auth/cli@latest generate --config=auth.config.ts --output=src/drizzle/schemas/auth.ts",
+		"check": "biome check --write .",
+		"db:generate": "drizzle-kit generate --config drizzle.config.ts",
+		"db:fresh": "rm -rf ./src/drizzle/migrations && drizzle-kit push --config drizzle-fresh.config.ts --force && bun run db:generate && bun run db:migrate",
+		"db:migrate": "drizzle-kit migrate --config drizzle.config.ts",
+		"db:pull": "drizzle-kit pull --config drizzle.config.ts",
+		"db:push": "drizzle-kit push --config drizzle.config.ts",
+		"db:studio": "drizzle-kit studio --config drizzle.config.ts",
+		"typecheck": "tsc --noEmit"
+	},
+	"exports": {
+		"./auth": "./src/auth.tsx",
+		"./database": "./src/db/database.ts",
+		"./models/*": "./src/models/*.ts",
+		"./schemas/*": "./src/arktype/*.ts",
+		"./queries/*": "./src/queries/*.ts",
+		"./queues/*": "./src/queues/*.ts",
+		"./resend": "./src/resend.ts"
+	},
+	"dependencies": {
+		"@react-email/components": "catalog:",
+		"@react-email/render": "catalog:",
+		"arktype": "catalog:",
+		"drizzle-orm": "catalog:",
+		"react-dom": "catalog:",
+		"react-email": "catalog:",
+		"react": "catalog:",
+		"resend": "catalog:",
+		"uuid": "catalog:"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "catalog:",
+		"@cloudflare/workers-types": "catalog:",
+		"@types/react": "catalog:",
+		"@types/node": "catalog:",
+		"better-auth": "catalog:",
+		"drizzle-kit": "catalog:",
+		"typescript": "catalog:",
+		"tailwind-merge": "catalog:",
+		"wrangler": "catalog:"
+	}
+}

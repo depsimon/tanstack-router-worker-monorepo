@@ -1,0 +1,20 @@
+name: ⎔ Setup Bun
+description: "Setup Bun environment and install dependencies."
+
+inputs:
+  bun-version:
+    description: "The Bun version to use."
+    required: true
+    default: 1.3.0
+
+runs:
+  using: "composite"
+  steps:
+    - name: ⎔ Setup Bun
+      uses: oven-sh/setup-bun@v2
+      with:
+        bun-version: ${{ inputs.bun-version }}
+
+    - name: 📦 Install dependencies
+      run: bun install --frozen-lockfile
+      shell: bash

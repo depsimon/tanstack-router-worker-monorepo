@@ -1,0 +1,14 @@
+/* Scrollbar styles */
+* {
+	scrollbar-color: var(--scrollbar) transparent;
+	scrollbar-width: thin;
+}
+
+/* Border color inheritance */
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+	border-color: var(--border, currentColor);
+}

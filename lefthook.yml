@@ -1,0 +1,20 @@
+assert_lefthook_installed: true
+colors: false
+no_tty: true
+output:
+  - failure
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: biome
+      run: bunx biome check --files-ignore-unknown=true --colors=off --no-errors-on-unmatched --diagnostic-level=error {staged_files}
+      skip:
+        - merge
+        - rebase
+      stage_fixed: true
+    - name: import-style
+      run: bun scripts/check-imports.ts {staged_files}
+      skip:
+        - merge
+        - rebase

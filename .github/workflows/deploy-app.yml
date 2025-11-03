@@ -1,0 +1,35 @@
+name: 🚀 Deploy App
+
+on:
+  workflow_dispatch:
+  # Enable on push to main to auto-deploy
+  # push:
+  #   branches: ["main"]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  actions: write
+  contents: write
+
+jobs:
+  deploy:
+    name: ☁️ Deploy App
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup Bun, install dependencies
+        uses: ./.github/composites/setup-bun
+
+      - name: ☁️ Build & Deploy
+        working-directory: ./app
+        run: bun run deploy:dev
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ENV: dev

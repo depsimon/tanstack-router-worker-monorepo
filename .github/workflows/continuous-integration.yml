@@ -1,0 +1,44 @@
+name: 🤖 Continuous Integration
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  push:
+    branches: ["main"]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  actions: write
+  contents: write
+
+jobs:
+  quality:
+    name: ⬣ Biome
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup Bun, install dependencies
+        uses: ./.github/composites/setup-bun
+
+      - name: 🔬 Run Biome
+        run: bunx biome check .
+
+  typecheck:
+    name: ʦ TypeScript
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup Bun, install dependencies
+        uses: ./.github/composites/setup-bun
+
+      - name: 🔎 Run Typecheck
+        run: bun run typecheck
